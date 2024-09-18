@@ -1,20 +1,14 @@
-class MyClass:
+class stringmethod():
+    def __init__(self):
+        self.string=""
+ 
+    def get(self):
+        self.string=input("Enter string: ")
+ 
+    def put(self):
+        print("String is:")
+        print(self.string)
 
-                def Get_String(self):
-
-                                self.MyStr=input("Enter any String: ")
-
-                def Print_String(self):
-
-                                s=self.MyStr
-
-                                print("String in Upper Case: " , s.upper())
-
-# main body
-
-Obj=MyClass()
-
-Obj.Get_String()
-
-Obj.Print_String()
-
+obj=stringmethod()
+obj.get()
+obj.put()
